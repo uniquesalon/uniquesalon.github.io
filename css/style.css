@@ -1,0 +1,170 @@
+/* uniquesalon.ro website by Catalin Trasca */
+
+/* import framework & things */
+@import url('https://unpkg.com/chota@latest');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Oswald:300,400,500,700');
+
+/* root */
+:root {
+	--primary-color: #b59472;
+	--darkGrey-color: #84868b;
+	--lightGrey-color: #d2d6dd;
+	--container-width: 1440px;
+	--container-text-width: 720px;
+	--container-width-small: 1020px;
+	--font-Bitter: 'Bitter', sans-serif;
+	--font-Oswald: 'Oswald', sans-serif;
+}
+
+/* main */
+body>.container {
+	max-width: var(--container-width);
+}
+
+body>.container-small {
+	max-width: var(--container-width-small);
+    margin: 0 auto;
+    width: 96%;
+    padding: 0 calc(var(--grid-gutter)/2);
+}
+
+body>footer {
+    background-color: #000;
+	color: white;
+    padding: 4rem;
+}
+
+section {
+    margin: 5rem auto;
+}
+
+hr {
+    margin: 3rem 0;
+}
+
+/* imp classes */
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    flex: 1;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.logo h1 {
+	display: block;
+	font-size: 55px;
+	font-weight: 300;
+	font-family: var(--font-Oswald);
+}
+
+.logo p {
+	font-size: 20px;
+	font-style: normal;
+	letter-spacing: 3px;
+	line-height: 10px;
+}
+
+/* override stock elements */
+nav {
+	font-family: var(--font-Oswald);
+	letter-spacing: 3px;
+	padding: 12.5px
+}
+
+.tabs>a {
+	color: white;
+}
+
+.tabs>a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* custom */
+.title {
+	font-family: var(--font-Oswald);
+	font-size: 52px;
+	line-height: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.pretitle {
+	font-family: var(--font-Bitter);
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 3px;
+	font-style: italic;
+	text-align: center;
+}
+
+.icon-title {
+	font-family: var(--font-Oswald);
+	color: var(--darkGrey-color);
+}
+
+.icon-size img {
+	height: auto;
+	width: 112px;
+}
+
+.image-cover {
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.image-landing {
+	border-radius: 50%;
+	width: 300px;
+}
+
+.black-bg {
+	background: black;
+	padding: 15px;
+	width: 100%;
+}
+
+.text-container {
+	max-width: var(--container-text-width);
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.little-spacing {
+	letter-spacing: 1.5px !important;
+}
+
+.before-maps {
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+/* colors */
+.white-text {
+	color: white;
+}
+
+.colored {
+	color: var(--primary-color);
+}
+
+/* id's */
+#tools-bg {
+	background-image: url('../res/background/tools-bg.jpg');
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
